@@ -1,0 +1,99 @@
+#page {
+    display: grid;
+    /* 100% de la pàgina d'amplada i llargària */
+    width: 100vw;
+    height: 100vh;
+    /* Files i columnes */
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Distribució de les àrees dintre de la "graella" */
+    grid-template-areas:
+    "head head head"
+    "z1 z2 z3"
+    "z4 z5 z6"
+    "z7 z5 z8";
+    background-color: rgba(245, 232, 158, 0.6);
+}
+
+#page > header {
+    grid-area: head;
+    background-color: #753636;
+    margin: 10px;
+    font-family: Inter;
+    font-size: 65px;
+
+
+}
+.center {
+    text-align: center;
+
+}
+#page > .zona1 {
+    grid-area: z1;
+    background-color: #D05353;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-top-left-radius: 100px;
+
+}
+#page > .zona2 {
+    grid-area: z2;
+    background-color: #D05353;
+    margin: 30px;
+    text-align: center;
+}
+#page > .zona3 {
+    grid-area: z3;
+    background-color: #D05353;
+    margin: 30px;
+    text-align: center;
+    border-top-right-radius: 100px;
+}
+#page > .zona4 {
+    grid-area: z4;
+    background-color: #E89A69;
+    margin: 30px;
+    text-align: center;
+}
+#page > .zona5 {
+    grid-area: z5;
+    background-color: #E89A69;
+    margin: 30px;
+    text-align: center;
+}
+#page > .zona6 {
+    grid-area: z6;
+    background-color: #E89A69;
+    margin: 30px;
+    text-align: center;
+}
+#page > .zona7 {
+    grid-area: z7;
+    background-color: #F9E784;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-bottom-left-radius: 100px;
+}
+#page > .zona8 {
+    grid-area: z8;
+    background-color: #F9E784;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-bottom-right-radius: 100px;
+}
+
+
+#page > nav {
+    grid-area: nav;
+}
+
+#page > main {
+    grid-area: main;
+}
+
+#page > footer {
+    grid-area: foot;
+}

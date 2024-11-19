@@ -1,0 +1,36 @@
+h1 {
+    color: #44dddd;
+    background-color: #ed99ae;
+    font-size: 60px;
+    font-family: Arial;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+h2 {
+    background-color: #879e9b;
+}
+.marro{
+    color: aquamarine;
+}
+.red{
+    color: #ffa735;
+}
